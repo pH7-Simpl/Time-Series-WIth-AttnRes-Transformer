@@ -113,8 +113,7 @@ def train_model(model, train_loader, val_loader, config, model_name, out_path:st
     with open(outed_path, 'w') as f:
         json.dump(save_data, f, indent=2)
 
-    print(f"Saved to: {weights_path} and {config_path}")
-    print(f"Cached to: {outed_path}")
+    print(f"✓ Model Saved")
 
     return model, history
 
